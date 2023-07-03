@@ -20,7 +20,7 @@
     const urlParams = new URLSearchParams(queryString);
     const componentAttributes = {
         flowApiName: 'Form_Submission_Settlement_Form',
-        flowInputVariables: [{name: 'recordId', type: 'String', value: urlParams.get('recordId')}]
+        flowInputVariables: []
     };
 
     $Lightning.use(
@@ -37,7 +37,6 @@
         },
         lightningEndpoint
     );
-
 
 </script>
 </html>
