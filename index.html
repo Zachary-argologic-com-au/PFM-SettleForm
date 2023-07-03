@@ -20,7 +20,7 @@
     const urlParams = new URLSearchParams(queryString);
     const componentAttributes = {
         flowApiName: 'Form_Submission_Settlement_Form',
-        flowInputVariables: []
+        flowInputVariables: [{name: 'GUID', type: 'String', value: urlParams.get('GUID')}]
     };
 
     $Lightning.use(
