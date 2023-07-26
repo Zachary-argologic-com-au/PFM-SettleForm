@@ -5,14 +5,14 @@
 }
 </style>
                 
-<script src="https://phifinneymcdonald2020--settlform.sandbox.my.site.com//lightning/lightning.out.js"></script>
+<script src="https://phifinneymcdonald2020.my.site.com/lightning/lightning.out.js"></script>
 <div data-lightning-out="true"></div>
 
 <script>
 
     const appName = 'c:lightningOutApp';
     const componentName = 'c:LightningOutFlowLwc';
-    const lightningEndpoint = 'https://phifinneymcdonald2020--settlform.sandbox.my.site.com/';
+    const lightningEndpoint = 'https://phifinneymcdonald2020.my.site.com';
     const targetElement = document.querySelector("[data-lightning-out]");
     
     // read url paramater
@@ -20,7 +20,7 @@
     const urlParams = new URLSearchParams(queryString);
     const componentAttributes = {
         flowApiName: 'Form_Submission_Settlement_Form',
-        flowInputVariables: [{name: 'recordId', type: 'String', value: urlParams.get('recordId')}]
+        flowInputVariables: [{name: 'GUID', type: 'String', value: urlParams.get('GUID')}]
     };
 
     $Lightning.use(
@@ -37,7 +37,6 @@
         },
         lightningEndpoint
     );
-
 
 </script>
 </html>
